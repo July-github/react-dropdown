@@ -53,5 +53,10 @@
   "dependencies": {
     "react-icons": "^4.4.0",
     "sass": "^1.54.3"
-  }
+  },
+"keywords": [
+  "react",
+  "react-component",
+  "dropdown"
+]
 }
