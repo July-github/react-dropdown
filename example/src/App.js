@@ -4,9 +4,9 @@ import 'react-dropdown/dist/index.scss';
 
 const App = () => {
 
-function consol(){
-  return console.log('setValue')
-}
+  function consol(){
+    return console.log('setValue')
+  }
 
   return <Dropdown 
             setValue={consol}
