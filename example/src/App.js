@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from "react-dropdown";
+import Dropdown from "react-ddown";
 import 'react-dropdown/dist/index.scss';
 
 const App = () => {
