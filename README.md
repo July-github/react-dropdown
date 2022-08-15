@@ -13,7 +13,7 @@
 ## Install
 
 ```bash
-npm install --save react-dropdown
+npm install --save react-ddown
 ```
 
 ## Usage
