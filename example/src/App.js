@@ -1,6 +1,6 @@
 import React from 'react';
 import Dropdown from "react-ddown";
-import 'react-dropdown/dist/index.scss';
+import 'react-ddown/dist/index.scss';
 
 const App = () => {
 
