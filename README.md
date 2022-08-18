@@ -20,8 +20,8 @@ npm install --save react-ddown
 
 ```jsx
 import React from 'react';
-import Dropdown from "react-dropdown";
-import 'react-dropdown/dist/index.scss';
+import Dropdown from "react-ddown";
+import 'react-ddown/dist/index.scss';
 
 const App = () => {
 
