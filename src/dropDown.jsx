@@ -39,7 +39,7 @@ function Dropdown({list, setValue, resetDrop}){
     }
 
     return (
-        <div className="dropDown">
+        <div className="dropDown customized_ddown">
             <div className="list" >
                 <div className='list_element first' >{selectedValue}</div>
                 {show?
