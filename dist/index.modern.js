@@ -1100,30 +1100,24 @@ if (process.env.NODE_ENV !== 'production') {
 }
 });
 
-function Dropdown(_ref) {
-  var list = _ref.list,
-      setValue = _ref.setValue,
-      resetDrop = _ref.resetDrop;
-
-  var _useState = useState(false),
-      show = _useState[0],
-      setShow = _useState[1];
-
-  var _useState2 = useState('- Select -'),
-      selectedValue = _useState2[0],
-      setSelectedValue = _useState2[1];
-
-  useEffect(function () {
+function Dropdown({
+  list,
+  setValue,
+  resetDrop
+}) {
+  const [show, setShow] = useState(false);
+  const [selectedValue, setSelectedValue] = useState('- Select -');
+  useEffect(() => {
     setValue(selectedValue);
 
     if (resetDrop === true) {
       setSelectedValue('- Select -');
     }
   }, [resetDrop, selectedValue, setValue]);
-  var datas = [];
+  const datas = [];
 
-  for (var i = 0; i < list.length; i++) {
-    var datasDropdown = {
+  for (let i = 0; i < list.length; i++) {
+    const datasDropdown = {
       index: 0,
       select: ''
     };
@@ -1142,20 +1136,16 @@ function Dropdown(_ref) {
   }
 
   return /*#__PURE__*/React.createElement("div", {
-    className: "dropDown"
+    className: "dropDown customized_ddown"
   }, /*#__PURE__*/React.createElement("div", {
     className: "list"
   }, /*#__PURE__*/React.createElement("div", {
     className: "list_element first"
-  }, selectedValue), show ? /*#__PURE__*/React.createElement("ul", null, datas.map(function (data) {
-    return /*#__PURE__*/React.createElement("li", {
-      key: data.index,
-      className: "list_element",
-      onClick: function onClick() {
-        return selectItem(data);
-      }
-    }, data.select);
-  })) : null), /*#__PURE__*/React.createElement("div", {
+  }, selectedValue), show ? /*#__PURE__*/React.createElement("ul", null, datas.map(data => /*#__PURE__*/React.createElement("li", {
+    key: data.index,
+    className: "list_element",
+    onClick: () => selectItem(data)
+  }, data.select))) : null), /*#__PURE__*/React.createElement("div", {
     className: "icon_list",
     onClick: show_hide
   }, show ? /*#__PURE__*/React.createElement(IoIosArrowUp, null) : /*#__PURE__*/React.createElement(IoIosArrowDown, null)));

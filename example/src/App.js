@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from "react-ddown";
+import Dropdown from 'react-ddown';
 import 'react-ddown/dist/index.scss';
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
   return <Dropdown 
             setValue={consol}
             list={['Sales', 'Marketing', 'Engineering', 'Human Ressources', 'Legal']}
+            isCustomized={true}
         />
 }
 

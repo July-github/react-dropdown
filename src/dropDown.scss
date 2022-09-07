@@ -1,9 +1,10 @@
 .dropDown{
     width: 400px;
     font-size: 30px;
-    background-color: rgba(138, 203, 215, 0.05);
+    background-color: white;
     position: relative;
-    margin: 20px 50px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .icon_list{
