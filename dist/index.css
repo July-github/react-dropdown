@@ -1,4 +1,4 @@
-._dropDown__dropDown__2Ahpx {
+._2Ahpx {
   width: 400px;
   font-size: 30px;
   background-color: white;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-._dropDown__icon_list__3yfJt {
+._3yfJt {
   margin: 5px;
   font-size: 40px;
   color: rgba(138, 203, 215, 0.8);
@@ -18,20 +18,20 @@
   cursor: pointer;
 }
 
-._dropDown__list__2I1W8 {
+._2I1W8 {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
   cursor: pointer;
 }
-._dropDown__list__2I1W8 > ul {
+._2I1W8 > ul {
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-._dropDown__list_element__1RT4Y {
+._1RT4Y {
   padding: 15px;
   width: 100%;
   box-sizing: border-box;
@@ -39,6 +39,6 @@
   border-bottom: solid 2px rgba(138, 203, 215, 0.8);
   list-style: none;
 }
-._dropDown__list_element__1RT4Y:hover {
+._1RT4Y:hover {
   background-color: rgba(138, 203, 215, 0.8);
 }
